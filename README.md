@@ -14,23 +14,8 @@ In this architecture, traffic classification rules and SRv6 paths are provisione
    `prism` monitors GoBGP RIB events via gRPC, checks whether the corresponding SRv6 Policy table exists in the kernel via Netlink, and installs `ip rule` (PBR) entries. If a referenced SRv6 Policy table does not exist, it blocks PBR installation and sends a warning alert to a remote Syslog server.
 
 ## Topology
-```text
-                       [ pola (PCE) ]        [ gobgp-server ]        [ syslog ]
-                        172.20.20.30           172.20.20.10         172.20.20.20
-                             | (PCEP)               | (iBGP Flowspec)    ^ (UDP 514)
-                             v                      v                    |
-[ host01 ] --- [ router1 (Headend: OpenPCC + GoBGP + tint) ] ----------+
-192.168.1.1                  | (172.20.20.100)
-                       [ router2 ]
-                        /       \
-       (Color 100) [ router3 ] [ router4 ] (Color 200)
-                        \       /
-                       [ router5 (End.DX4) ]
-                             |
-                        [ host02 ]
-                        192.168.2.1
-```
 
+![Network Topology](docs/topology.png)
 
 ## Directory Structure
 
