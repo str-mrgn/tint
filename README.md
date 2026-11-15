@@ -15,7 +15,8 @@ In this architecture, traffic classification rules and SRv6 paths are provisione
 
 ## Topology
 
-![Network Topology](docs/topology.png)
+<img width="1280" height="720" alt="topology" src="https://github.com/user-attachments/assets/e7566647-7cae-43dd-96f5-d8cad835815c" />
+
 
 ## Directory Structure
 
