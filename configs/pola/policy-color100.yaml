@@ -1,0 +1,13 @@
+asn: 65001
+srPolicy:
+  pcepSessionAddr: "172.20.20.100"
+  headend: "2001:db8:1::1"
+  endpoint: "2001:db8:5::100"
+  name: policy-color100
+  color: 100
+  candidatePath:
+    explicit:
+      segmentList:
+        - sid: "2001:db8:2::1"
+        - sid: "2001:db8:3::1"
+        - sid: "2001:db8:5::100"

@@ -1,0 +1,15 @@
+# Compiled binaries and archives
+bin/
+*.o
+*.tar.gz
+openpcc/build/
+
+# Containerlab runtime state
+clab-srv6-lab/
+.topo.yaml.bak
+
+# Editor & OS temporary files
+*~
+\#*\#
+.DS_Store
+.vscode/
