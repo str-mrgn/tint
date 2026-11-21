@@ -48,7 +48,7 @@ Terminal 2 (Push SR Policies from Pola):
     docker exec -it clab-srv6-lab-pola pola sr-policy add --no-sid-validate -f /pola/policy-color100.yaml
     docker exec -it clab-srv6-lab-pola pola sr-policy add --no-sid-validate -f /pola/policy-color200.yaml
 
-### 4. Start `prism` and Advertise Flowspec Rules
+### 4. Start `tint` and Advertise Flowspec Rules
 
 Terminal 3 (Start `tint` on `router1`):
 
